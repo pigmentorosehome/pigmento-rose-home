@@ -7,8 +7,8 @@
 
 body {
     font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    color: #2f2531;
-    background-color: #f7f3fb; /* lila muy suave */
+    color: #4d4455; /* gris profundo elegante */
+    background-color: #f8f4fb; /* lila muy suave */
     line-height: 1.6;
 }
 
@@ -25,9 +25,9 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: rgba(247, 243, 251, 0.96);
+    background-color: rgba(248, 244, 251, 0.96);
     backdrop-filter: blur(8px);
-    border-bottom: 1px solid #e0cbdc;
+    border-bottom: 1px solid #e3d4e9;
 }
 
 .header-content {
@@ -57,13 +57,13 @@ body {
     margin-left: 1rem;
     text-decoration: none;
     font-size: 0.9rem;
-    color: #4c3a55;
+    color: #4d4455;
     text-transform: uppercase;
     letter-spacing: 0.07em;
 }
 
 .nav a:hover {
-    color: #c169a9;
+    color: #c58abd;
 }
 
 /* Hero */
@@ -82,23 +82,43 @@ body {
     font-family: "Playfair Display", serif;
     font-size: 2.4rem;
     margin-bottom: 1rem;
-    color: #301c3b;
+    color: #3a2d47;
 }
 
 .hero-text p {
     font-size: 1rem;
     max-width: 32rem;
     margin-bottom: 1.5rem;
-    color: #624c70;
+    color: #6a5a78;
 }
 
+/* Botones del hero mejor distribuidos */
 .hero-buttons {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.8rem;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    margin-top: 1.5rem;
 }
 
-/* Botones */
+.hero-buttons a {
+    flex: 1 1 calc(50% - 1rem);
+    text-align: center;
+}
+
+/* Botón pequeño (Pets) ocupando fila completa */
+.btn-small {
+    padding: 0.5rem 1.1rem;
+    font-size: 0.8rem;
+    flex: 1 1 100%;
+    max-width: 260px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botones generales */
 .btn {
     display: inline-block;
     padding: 0.75rem 1.4rem;
@@ -113,29 +133,24 @@ body {
 }
 
 .btn-primary {
-    background-color: #c169a9;
+    background-color: #d7a8c9; /* rosé suave */
     color: #fff;
-    border-color: #c169a9;
+    border-color: #d7a8c9;
 }
 
 .btn-primary:hover {
-    background-color: #aa548f;
-    border-color: #aa548f;
+    background-color: #c58abd;
+    border-color: #c58abd;
 }
 
 .btn-outline {
     background-color: transparent;
-    color: #c169a9;
-    border-color: #c169a9;
+    color: #d7a8c9;
+    border-color: #d7a8c9;
 }
 
 .btn-outline:hover {
     background-color: #fbe7f4;
-}
-
-.btn-small {
-    padding: 0.5rem 1.1rem;
-    font-size: 0.8rem;
 }
 
 /* Hero imagen */
@@ -144,19 +159,12 @@ body {
     justify-content: center;
 }
 
-.hero-placeholder {
+.hero-photo {
     width: 100%;
-    min-height: 260px;
+    max-height: 320px;
     border-radius: 1.5rem;
-    border: 1px dashed #ddc4e3;
-    background: linear-gradient(135deg, #fbe7f4, #f7f3fb);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 0.9rem;
-    color: #8f6b9a;
+    object-fit: cover;
+    border: 1px solid #e3d4e9;
 }
 
 /* Secciones generales */
@@ -165,7 +173,7 @@ body {
 }
 
 .section-alt {
-    background-color: #fff9f6; /* crema suave */
+    background-color: #f4ecdf; /* arena muy suave */
 }
 
 .section-title {
@@ -173,7 +181,7 @@ body {
     font-size: 1.8rem;
     margin-bottom: 0.75rem;
     text-align: center;
-    color: #301c3b;
+    color: #3a2d47;
 }
 
 .section-subtitle {
@@ -181,7 +189,7 @@ body {
     max-width: 36rem;
     margin: 0 auto 2rem auto;
     text-align: center;
-    color: #715a82;
+    color: #725f80;
 }
 
 /* Grid de tarjetas */
@@ -196,8 +204,8 @@ body {
     background-color: #ffffff;
     border-radius: 1.25rem;
     padding: 1.5rem;
-    border: 1px solid #e0cbdc;
-    box-shadow: 0 10px 25px rgba(139, 93, 145, 0.09);
+    border: 1px solid #e3d4e9;
+    box-shadow: 0 10px 25px rgba(116, 88, 135, 0.09);
 }
 
 .card h3 {
@@ -216,26 +224,36 @@ body {
 .product-card {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 0.6rem;
 }
 
 .product-image-placeholder {
     width: 100%;
     aspect-ratio: 4 / 3;
     border-radius: 1rem;
-    background: #f4ecfb;
-    border: 1px dashed #ddc4e3;
+    background: #f3ecfb;
+    border: 1px dashed #d7c1e6;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.85rem;
     color: #9a77aa;
     margin-bottom: 0.5rem;
+    text-align: center;
+    padding: 0.75rem;
 }
 
 .product-price {
     font-weight: 600;
-    color: #aa548f;
+    color: #c58abd;
+}
+
+/* Contenedor de botones de producto */
+.product-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.3rem;
 }
 
 /* About */
@@ -250,7 +268,7 @@ body {
     background-color: #ffffff;
     border-radius: 1.25rem;
     padding: 1.5rem;
-    border: 1px solid #e0cbdc;
+    border: 1px solid #e3d4e9;
 }
 
 .about-box h3 {
@@ -269,7 +287,7 @@ body {
 /* FAQ */
 .faq-item {
     border-radius: 1rem;
-    border: 1px solid #e0cbdc;
+    border: 1px solid #e3d4e9;
     padding: 1.2rem 1.3rem;
     margin-bottom: 1rem;
     background-color: #ffffff;
@@ -292,9 +310,9 @@ body {
 .contact-form {
     background-color: #ffffff;
     border-radius: 1.25rem;
-    border: 1px solid #e0cbdc;
+    border: 1px solid #e3d4e9;
     padding: 1.5rem;
-    box-shadow: 0 8px 20px rgba(139, 93, 145, 0.08);
+    box-shadow: 0 8px 20px rgba(116, 88, 135, 0.08);
 }
 
 .contact-form h3 {
@@ -327,8 +345,8 @@ body {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-    border-color: #c169a9;
-    box-shadow: 0 0 0 2px rgba(193, 105, 169, 0.25);
+    border-color: #d7a8c9;
+    box-shadow: 0 0 0 2px rgba(215, 168, 201, 0.25);
 }
 
 .contact-note {
@@ -340,8 +358,8 @@ body {
 /* Footer */
 .footer {
     padding: 1rem 0 1.4rem;
-    border-top: 1px solid #e0cbdc;
-    background-color: #f7f3fb;
+    border-top: 1px solid #e3d4e9;
+    background-color: #f8f4fb;
     margin-top: 2rem;
 }
 
@@ -365,11 +383,15 @@ body {
     }
 
     .nav {
-        display: none; /* luego podemos hacer menú móvil */
+        display: none; /* luego se puede hacer menú móvil si quieres */
     }
 
     .hero {
         padding-top: 3rem;
+    }
+
+    .hero-buttons a {
+        flex: 1 1 100%;
     }
 }
 

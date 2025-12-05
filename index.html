@@ -1,386 +1,379 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pigmento Rosé Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body {
-    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    color: #2f2531;
-    background-color: #f7f3fb; /* lila muy suave */
-    line-height: 1.6;
-}
+    <meta name="description" content="Pigmento Rosé Home - Arte original, decoración estética y productos para el hogar y mascotas. Estilo para todos los que aman los detalles.">
 
-/* Contenedor general */
-.container {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 1.5rem;
-}
+    <!-- Fuente de Google (gratis) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-/* Header / Nav */
-.header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background-color: rgba(247, 243, 251, 0.96);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid #e0cbdc;
-}
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <header class="header">
+        <div class="container header-content">
+            <div class="logo">
+                <span class="logo-main">Pigmento Rosé</span>
+                <span class="logo-sub">Home</span>
+            </div>
+            <nav class="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#arte">Arte</a>
+                <a href="#hogar">Hogar</a>
+                <a href="#pets">Mascotas</a>
+                <a href="#nosotras">Nosotras</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
 
-.header-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.75rem 0;
-}
+    <main>
+        <!-- HERO / INICIO -->
+        <section id="inicio" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <h1>Arte, hogar y mascotas con estilo para todos.</h1>
+                    <p>
+                        Pigmento Rosé Home reúne <strong>arte original</strong>, 
+                        <strong>decoración estética</strong> y <strong>productos para mascotas</strong> 
+                        pensados para personas que aman los detalles, sin etiquetas.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#arte" class="btn btn-primary">Explorar arte</a>
+                        <a href="#pets" class="btn btn-outline">Ver Pigmento Pets</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="hero-placeholder">
+                        <span>Aquí puedes poner una foto de tus cuadros o un rincón decorado ✨</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-.logo-main {
-    font-family: "Playfair Display", serif;
-    font-size: 1.35rem;
-    font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-}
+        <!-- COLECCIONES DESTACADAS -->
+        <section id="colecciones" class="section">
+            <div class="container">
+                <h2 class="section-title">Colecciones destacadas</h2>
+                <p class="section-subtitle">
+                    Pensadas para diferentes estilos de persona, hogar y energía: suave, minimal o bohemia.
+                </p>
 
-.logo-sub {
-    display: block;
-    font-size: 0.75rem;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: #a479ad;
-}
+                <div class="cards-grid">
+                    <article class="card">
+                        <h3>Colección Rosé</h3>
+                        <p>Paletas suaves con rosados y lilas. Ideal para espacios cálidos, románticos y calmados.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Minimal Studio</h3>
+                        <p>Líneas limpias, fondos neutros y composiciones sencillas para amantes de lo minimal.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Boho & Chill</h3>
+                        <p>Formas orgánicas, texturas y tonos tierra para quienes aman lo libre y relajado.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-.nav a {
-    margin-left: 1rem;
-    text-decoration: none;
-    font-size: 0.9rem;
-    color: #4c3a55;
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
-}
+        <!-- ARTE ORIGINAL -->
+        <section id="arte" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Arte original</h2>
+                <p class="section-subtitle">
+                    Cada pieza nace desde cero: cuadros, ilustraciones y láminas pensadas para que tu espacio cuente quién eres.
+                </p>
 
-.nav a:hover {
-    color: #c169a9;
-}
+                <div class="cards-grid">
+                    <!-- Producto 1 -->
+                    <article class="card product-card">
+                        <div class="product-image-placeholder">
+                            <span>Imagen cuadro 1</span>
+                        </div>
+                        <h3>Cuadro “Luz Rosé”</h3>
+                        <p class="product-desc">
+                            Ilustración en tonos rosé y lila, ideal para habitaciones, estudios o rincones de lectura.
+                        </p>
+                        <p class="product-price">$120.000 COP</p>
+                        <a 
+                            class="btn btn-small"
+                            href="https://wa.me/57XXXXXXXXXX?text=Hola%2C%20me%20interesa%20el%20cuadro%20Luz%20Ros%C3%A9%20de%20Pigmento%20Ros%C3%A9%20Home."
+                            target="_blank"
+                        >
+                            Comprar por WhatsApp
+                        </a>
+                    </article>
 
-/* Hero */
-.hero {
-    padding: 4rem 0 3rem;
-}
+                    <!-- Producto 2 -->
+                    <article class="card product-card">
+                        <div class="product-image-placeholder">
+                            <span>Imagen cuadro 2</span>
+                        </div>
+                        <h3>Cuadro “Equilibrio”</h3>
+                        <p class="product-desc">
+                            Composición minimalista de formas geométricas en tonos neutrales, perfecta para salas o oficinas.
+                        </p>
+                        <p class="product-price">$135.000 COP</p>
+                        <a 
+                            class="btn btn-small"
+                            href="https://wa.me/57XXXXXXXXXX?text=Hola%2C%20me%20interesa%20el%20cuadro%20Equilibrio%20de%20Pigmento%20Ros%C3%A9%20Home."
+                            target="_blank"
+                        >
+                            Comprar por WhatsApp
+                        </a>
+                    </article>
 
-.hero-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
-    gap: 2.5rem;
-    align-items: center;
-}
+                    <!-- Producto 3 -->
+                    <article class="card product-card">
+                        <div class="product-image-placeholder">
+                            <span>Imagen pack láminas</span>
+                        </div>
+                        <h3>Pack de láminas decorativas</h3>
+                        <p class="product-desc">
+                            Set de 3 ilustraciones imprimibles para transformar tus paredes con poco presupuesto y mucho estilo.
+                        </p>
+                        <p class="product-price">$60.000 COP</p>
+                        <a 
+                            class="btn btn-small"
+                            href="https://wa.me/57XXXXXXXXXX?text=Hola%2C%20me%20interesa%20el%20pack%20de%20l%C3%A1minas%20decorativas%20de%20Pigmento%20Ros%C3%A9%20Home."
+                            target="_blank"
+                        >
+                            Comprar por WhatsApp
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-.hero-text h1 {
-    font-family: "Playfair Display", serif;
-    font-size: 2.4rem;
-    margin-bottom: 1rem;
-    color: #301c3b;
-}
+        <!-- HOGAR & DECORACIÓN -->
+        <section id="hogar" class="section">
+            <div class="container">
+                <h2 class="section-title">Hogar & decoración</h2>
+                <p class="section-subtitle">
+                    Piezas seleccionadas bajo modelo dropshipping para complementar tu espacio con estética suave, moderna e inclusiva.
+                </p>
 
-.hero-text p {
-    font-size: 1rem;
-    max-width: 32rem;
-    margin-bottom: 1.5rem;
-    color: #624c70;
-}
+                <div class="cards-grid">
+                    <article class="card product-card">
+                        <div class="product-image-placeholder">
+                            <span>Producto hogar 1</span>
+                        </div>
+                        <h3>Set de cojines Studio</h3>
+                        <p class="product-desc">
+                            Cojines en tonos neutros y lila suave, perfectos para sala, habitación o estudio creativo.
+                        </p>
+                        <p class="product-price">$95.000 COP</p>
+                        <a 
+                            class="btn btn-small"
+                            href="https://wa.me/57XXXXXXXXXX?text=Hola%2C%20quiero%20info%20del%20Set%20de%20cojines%20Studio."
+                            target="_blank"
+                        >
+                            Consultar disponibilidad
+                        </a>
+                    </article>
 
-.hero-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-}
+                    <article class="card product-card">
+                        <div class="product-image-placeholder">
+                            <span>Producto hogar 2</span>
+                        </div>
+                        <h3>Velas decorativas</h3>
+                        <p class="product-desc">
+                            Velas en formas orgánicas y colores suaves para dar luz cálida y ambiente acogedor.
+                        </p>
+                        <p class="product-price">$55.000 COP</p>
+                        <a 
+                            class="btn btn-small"
+                            href="https://wa.me/57XXXXXXXXXX?text=Hola%2C%20quiero%20info%20de%20las%20velas%20decorativas."
+                            target="_blank"
+                        >
+                            Consultar disponibilidad
+                        </a>
+                    </article>
 
-/* Botones */
-.btn {
-    display: inline-block;
-    padding: 0.75rem 1.4rem;
-    border-radius: 999px;
-    border: 1px solid transparent;
-    font-size: 0.9rem;
-    text-decoration: none;
-    text-align: center;
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-}
+                    <article class="card product-card">
+                        <div class="product-image-placeholder">
+                            <span>Producto hogar 3</span>
+                        </div>
+                        <h3>Espejo arco</h3>
+                        <p class="product-desc">
+                            Espejo decorativo con forma de arco y marco sutil, ideal para tocador, entrada o habitación.
+                        </p>
+                        <p class="product-price">$110.000 COP</p>
+                        <a 
+                            class="btn btn-small"
+                            href="https://wa.me/57XXXXXXXXXX?text=Hola%2C%20quiero%20info%20del%20espejo%20arco."
+                            target="_blank"
+                        >
+                            Consultar disponibilidad
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-.btn-primary {
-    background-color: #c169a9;
-    color: #fff;
-    border-color: #c169a9;
-}
+        <!-- PIGMENTO PETS -->
+        <section id="pets" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Pigmento Pets</h2>
+                <p class="section-subtitle">
+                    Porque los perritos también son parte del hogar. Accesorios estéticos para quienes aman cuidar su espacio y a sus mascotas.
+                </p>
 
-.btn-primary:hover {
-    background-color: #aa548f;
-    border-color: #aa548f;
-}
+                <div class="cards-grid">
+                    <article class="card product-card">
+                        <div class="product-image-placeholder">
+                            <span>Cama para perro</span>
+                        </div>
+                        <h3>Cama “Soft Cloud”</h3>
+                        <p class="product-desc">
+                            Cama esponjosa en tonos neutros que se integra perfecto con la decoración de tu sala o habitación.
+                        </p>
+                        <p class="product-price">$150.000 COP</p>
+                        <a 
+                            class="btn btn-small"
+                            href="https://wa.me/57XXXXXXXXXX?text=Hola%2C%20quiero%20info%20de%20la%20cama%20Soft%20Cloud%20para%20perritos."
+                            target="_blank"
+                        >
+                            Consultar disponibilidad
+                        </a>
+                    </article>
 
-.btn-outline {
-    background-color: transparent;
-    color: #c169a9;
-    border-color: #c169a9;
-}
+                    <article class="card product-card">
+                        <div class="product-image-placeholder">
+                            <span>Platos estéticos</span>
+                        </div>
+                        <h3>Platos elevados “Studio Pet”</h3>
+                        <p class="product-desc">
+                            Doble plato elevado en madera y metal, pensado para cuidar postura y sumar diseño a tu cocina.
+                        </p>
+                        <p class="product-price">$120.000 COP</p>
+                        <a 
+                            class="btn btn-small"
+                            href="https://wa.me/57XXXXXXXXXX?text=Hola%2C%20quiero%20info%20de%20los%20platos%20Studio%20Pet."
+                            target="_blank"
+                        >
+                            Consultar disponibilidad
+                        </a>
+                    </article>
 
-.btn-outline:hover {
-    background-color: #fbe7f4;
-}
+                    <article class="card product-card">
+                        <div class="product-image-placeholder">
+                            <span>Arte de mascotas</span>
+                        </div>
+                        <h3>Retrato ilustrado de tu perro</h3>
+                        <p class="product-desc">
+                            Ilustración personalizada de tu mascota, lista para imprimir o enmarcar. Hecha a mano digitalmente.
+                        </p>
+                        <p class="product-price">Desde $95.000 COP</p>
+                        <a 
+                            class="btn btn-small"
+                            href="https://wa.me/57XXXXXXXXXX?text=Hola%2C%20me%20interesa%20un%20retrato%20ilustrado%20de%20mi%20perrito."
+                            target="_blank"
+                        >
+                            Pedir retrato
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-.btn-small {
-    padding: 0.5rem 1.1rem;
-    font-size: 0.8rem;
-}
+        <!-- SOBRE NOSOTRAS -->
+        <section id="nosotras" class="section">
+            <div class="container about-grid">
+                <div>
+                    <h2 class="section-title">Sobre Pigmento Rosé Home</h2>
+                    <p>
+                        Pigmento Rosé Home nace del sueño de crear espacios que se sientan auténticos, seguros y llenos de intención, sin importar quién seas o cómo te identifiques.
+                    </p>
+                    <p>
+                        Somos un proyecto creado por mujeres que creen en el poder del color, la calma y los detalles, pero nuestra casa está abierta a todas las personas y estilos.
+                    </p>
+                </div>
+                <div class="about-box">
+                    <h3>Lo que creemos</h3>
+                    <ul>
+                        <li>El hogar es un refugio y un espacio para expresarte.</li>
+                        <li>El arte y la decoración no tienen género.</li>
+                        <li>Las mascotas son parte de la familia y del diseño del hogar.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-/* Hero imagen */
-.hero-image {
-    display: flex;
-    justify-content: center;
-}
+        <!-- PREGUNTAS FRECUENTES -->
+        <section id="faq" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Preguntas frecuentes</h2>
 
-.hero-placeholder {
-    width: 100%;
-    min-height: 260px;
-    border-radius: 1.5rem;
-    border: 1px dashed #ddc4e3;
-    background: linear-gradient(135deg, #fbe7f4, #f7f3fb);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 0.9rem;
-    color: #8f6b9a;
-}
+                <div class="faq-item">
+                    <h3>¿Cuánto tardan los envíos?</h3>
+                    <p>
+                        Depende del tipo de producto:
+                        <br><strong>Arte original:</strong> entre 3 y 8 días hábiles dentro de Colombia.
+                        <br><strong>Productos dropshipping hogar o pets:</strong> entre 10 y 25 días hábiles, según el proveedor.
+                    </p>
+                </div>
 
-/* Secciones generales */
-.section {
-    padding: 3.5rem 0;
-}
+                <div class="faq-item">
+                    <h3>¿Desde dónde se envían los productos?</h3>
+                    <p>
+                        Algunos productos se envían desde Colombia y otros desde proveedores internacionales. 
+                        Siempre te informaremos el tiempo estimado antes de confirmar tu pedido.
+                    </p>
+                </div>
 
-.section-alt {
-    background-color: #fff9f6; /* crema suave */
-}
+                <div class="faq-item">
+                    <h3>¿Cómo compro si no hay botón de pago directo?</h3>
+                    <p>
+                        Por ahora gestionamos los pedidos por WhatsApp para acompañarte en el proceso de pago, talla, medidas y envío. 
+                        Solo haz clic en los botones de “Comprar” o “Consultar” y te atenderemos personalmente.
+                    </p>
+                </div>
+            </div>
+        </section>
 
-.section-title {
-    font-family: "Playfair Display", serif;
-    font-size: 1.8rem;
-    margin-bottom: 0.75rem;
-    text-align: center;
-    color: #301c3b;
-}
+        <!-- CONTACTO -->
+        <section id="contacto" class="section">
+            <div class="container contact-grid">
+                <div>
+                    <h2 class="section-title">Contacto</h2>
+                    <p>Si quieres una pieza personalizada, un retrato de tu perrito o tienes dudas, escríbenos:</p>
+                    <p><strong>Correo:</strong> contacto@pigmentorosehome.com (puedes usar tu Gmail por ahora)</p>
+                    <p><strong>WhatsApp:</strong> +57 XXX XXX XXXX</p>
+                </div>
+                <form class="contact-form">
+                    <h3>Escríbenos</h3>
+                    <label>Nombre</label>
+                    <input type="text" placeholder="Tu nombre">
+                    <label>Correo</label>
+                    <input type="email" placeholder="tunombre@email.com">
+                    <label>Mensaje</label>
+                    <textarea rows="4" placeholder="Cuéntanos qué estás buscando..."></textarea>
+                    <button type="button" class="btn btn-primary">Enviar (maqueta)</button>
+                    <p class="contact-note">
+                        *Este formulario es solo visual por ahora. 
+                        Más adelante podemos conectarlo a un correo real o backend.
+                    </p>
+                </form>
+            </div>
+        </section>
+    </main>
 
-.section-subtitle {
-    font-size: 0.97rem;
-    max-width: 36rem;
-    margin: 0 auto 2rem auto;
-    text-align: center;
-    color: #715a82;
-}
+    <footer class="footer">
+        <div class="container footer-content">
+            <span>© <span id="year"></span> Pigmento Rosé Home · Hecho con amor en Colombia</span>
+        </div>
+    </footer>
 
-/* Grid de tarjetas */
-.cards-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-}
-
-.card {
-    background-color: #ffffff;
-    border-radius: 1.25rem;
-    padding: 1.5rem;
-    border: 1px solid #e0cbdc;
-    box-shadow: 0 10px 25px rgba(139, 93, 145, 0.09);
-}
-
-.card h3 {
-    font-family: "Playfair Display", serif;
-    font-size: 1.1rem;
-    margin-bottom: 0.6rem;
-    color: #3b2647;
-}
-
-.card p {
-    font-size: 0.9rem;
-    color: #634a6c;
-}
-
-/* Productos */
-.product-card {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
-.product-image-placeholder {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    border-radius: 1rem;
-    background: #f4ecfb;
-    border: 1px dashed #ddc4e3;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.85rem;
-    color: #9a77aa;
-    margin-bottom: 0.5rem;
-}
-
-.product-price {
-    font-weight: 600;
-    color: #aa548f;
-}
-
-/* About */
-.about-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-    gap: 2rem;
-    align-items: flex-start;
-}
-
-.about-box {
-    background-color: #ffffff;
-    border-radius: 1.25rem;
-    padding: 1.5rem;
-    border: 1px solid #e0cbdc;
-}
-
-.about-box h3 {
-    font-family: "Playfair Display", serif;
-    margin-bottom: 0.7rem;
-    color: #3b2647;
-}
-
-.about-box ul {
-    list-style: disc;
-    padding-left: 1.2rem;
-    font-size: 0.9rem;
-    color: #634a6c;
-}
-
-/* FAQ */
-.faq-item {
-    border-radius: 1rem;
-    border: 1px solid #e0cbdc;
-    padding: 1.2rem 1.3rem;
-    margin-bottom: 1rem;
-    background-color: #ffffff;
-}
-
-.faq-item h3 {
-    font-size: 1rem;
-    margin-bottom: 0.4rem;
-    font-family: "Playfair Display", serif;
-    color: #3b2647;
-}
-
-/* Contacto */
-.contact-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
-    gap: 2rem;
-}
-
-.contact-form {
-    background-color: #ffffff;
-    border-radius: 1.25rem;
-    border: 1px solid #e0cbdc;
-    padding: 1.5rem;
-    box-shadow: 0 8px 20px rgba(139, 93, 145, 0.08);
-}
-
-.contact-form h3 {
-    font-family: "Playfair Display", serif;
-    margin-bottom: 1rem;
-    color: #3b2647;
-}
-
-.contact-form label {
-    display: block;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: 0.2rem;
-    color: #876592;
-}
-
-.contact-form input,
-.contact-form textarea {
-    width: 100%;
-    border-radius: 0.7rem;
-    border: 1px solid #e5d3ec;
-    padding: 0.55rem 0.7rem;
-    margin-bottom: 0.7rem;
-    font-size: 0.9rem;
-    font-family: inherit;
-    outline: none;
-    background-color: #fdfbff;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-    border-color: #c169a9;
-    box-shadow: 0 0 0 2px rgba(193, 105, 169, 0.25);
-}
-
-.contact-note {
-    font-size: 0.75rem;
-    color: #8f6b9a;
-    margin-top: 0.5rem;
-}
-
-/* Footer */
-.footer {
-    padding: 1rem 0 1.4rem;
-    border-top: 1px solid #e0cbdc;
-    background-color: #f7f3fb;
-    margin-top: 2rem;
-}
-
-.footer-content {
-    text-align: center;
-    font-size: 0.8rem;
-    color: #8f6b9a;
-}
-
-/* RESPONSIVE */
-@media (max-width: 900px) {
-    .hero-grid,
-    .cards-grid,
-    .about-grid,
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .cards-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .nav {
-        display: none; /* luego podemos hacer menú móvil */
-    }
-
-    .hero {
-        padding-top: 3rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .hero-text h1 {
-        font-size: 1.9rem;
-    }
-
-    .section {
-        padding: 2.7rem 0;
-    }
-}
-
-
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

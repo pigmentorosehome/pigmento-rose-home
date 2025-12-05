@@ -1,4 +1,4 @@
-/* Reset básico */
+/* Reset bÃ¡sico */
 * {
     margin: 0;
     padding: 0;
@@ -7,8 +7,8 @@
 
 body {
     font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    color: #2e1f24;
-    background-color: #fff9f9;
+    color: #2f2531;
+    background-color: #f7f3fb; /* lila muy suave */
     line-height: 1.6;
 }
 
@@ -25,9 +25,9 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: rgba(255, 249, 249, 0.96);
+    background-color: rgba(247, 243, 251, 0.96);
     backdrop-filter: blur(8px);
-    border-bottom: 1px solid #f1d8de;
+    border-bottom: 1px solid #e0cbdc;
 }
 
 .header-content {
@@ -50,21 +50,21 @@ body {
     font-size: 0.75rem;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: #b48491;
+    color: #a479ad;
 }
 
 .nav a {
     margin-left: 1rem;
     text-decoration: none;
     font-size: 0.9rem;
-    color: #4b2e38;
+    color: #4c3a55;
     text-transform: uppercase;
     letter-spacing: 0.07em;
 }
 
-    .nav a:hover {
-        color: #c85c82;
-    }
+.nav a:hover {
+    color: #c169a9;
+}
 
 /* Hero */
 .hero {
@@ -82,13 +82,14 @@ body {
     font-family: "Playfair Display", serif;
     font-size: 2.4rem;
     margin-bottom: 1rem;
-    color: #3a212b;
+    color: #301c3b;
 }
 
 .hero-text p {
     font-size: 1rem;
     max-width: 32rem;
     margin-bottom: 1.5rem;
+    color: #624c70;
 }
 
 .hero-buttons {
@@ -112,25 +113,25 @@ body {
 }
 
 .btn-primary {
-    background-color: #c85c82;
+    background-color: #c169a9;
     color: #fff;
-    border-color: #c85c82;
+    border-color: #c169a9;
 }
 
-    .btn-primary:hover {
-        background-color: #b64f74;
-        border-color: #b64f74;
-    }
+.btn-primary:hover {
+    background-color: #aa548f;
+    border-color: #aa548f;
+}
 
 .btn-outline {
     background-color: transparent;
-    color: #c85c82;
-    border-color: #c85c82;
+    color: #c169a9;
+    border-color: #c169a9;
 }
 
-    .btn-outline:hover {
-        background-color: #ffe5ee;
-    }
+.btn-outline:hover {
+    background-color: #fbe7f4;
+}
 
 .btn-small {
     padding: 0.5rem 1.1rem;
@@ -147,15 +148,15 @@ body {
     width: 100%;
     min-height: 260px;
     border-radius: 1.5rem;
-    border: 1px dashed #e2b8c4;
-    background: linear-gradient(135deg, #ffe5ee, #fff9f9);
+    border: 1px dashed #ddc4e3;
+    background: linear-gradient(135deg, #fbe7f4, #f7f3fb);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     padding: 1.5rem;
     font-size: 0.9rem;
-    color: #8f6172;
+    color: #8f6b9a;
 }
 
 /* Secciones generales */
@@ -164,7 +165,7 @@ body {
 }
 
 .section-alt {
-    background-color: #fffdfd;
+    background-color: #fff9f6; /* crema suave */
 }
 
 .section-title {
@@ -172,7 +173,7 @@ body {
     font-size: 1.8rem;
     margin-bottom: 0.75rem;
     text-align: center;
-    color: #3a212b;
+    color: #301c3b;
 }
 
 .section-subtitle {
@@ -180,7 +181,7 @@ body {
     max-width: 36rem;
     margin: 0 auto 2rem auto;
     text-align: center;
-    color: #6e4b59;
+    color: #715a82;
 }
 
 /* Grid de tarjetas */
@@ -195,20 +196,21 @@ body {
     background-color: #ffffff;
     border-radius: 1.25rem;
     padding: 1.5rem;
-    border: 1px solid #f2d7df;
-    box-shadow: 0 10px 25px rgba(200, 92, 130, 0.06);
+    border: 1px solid #e0cbdc;
+    box-shadow: 0 10px 25px rgba(139, 93, 145, 0.09);
 }
 
-    .card h3 {
-        font-family: "Playfair Display", serif;
-        font-size: 1.1rem;
-        margin-bottom: 0.6rem;
-    }
+.card h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    color: #3b2647;
+}
 
-    .card p {
-        font-size: 0.9rem;
-        color: #63414f;
-    }
+.card p {
+    font-size: 0.9rem;
+    color: #634a6c;
+}
 
 /* Productos */
 .product-card {
@@ -221,19 +223,19 @@ body {
     width: 100%;
     aspect-ratio: 4 / 3;
     border-radius: 1rem;
-    background: #fff3f6;
-    border: 1px dashed #e2b8c4;
+    background: #f4ecfb;
+    border: 1px dashed #ddc4e3;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 0.85rem;
-    color: #b47b8b;
+    color: #9a77aa;
     margin-bottom: 0.5rem;
 }
 
 .product-price {
     font-weight: 600;
-    color: #b64f74;
+    color: #aa548f;
 }
 
 /* About */
@@ -245,38 +247,40 @@ body {
 }
 
 .about-box {
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 1.25rem;
     padding: 1.5rem;
-    border: 1px solid #f2d7df;
+    border: 1px solid #e0cbdc;
 }
 
-    .about-box h3 {
-        font-family: "Playfair Display", serif;
-        margin-bottom: 0.7rem;
-    }
+.about-box h3 {
+    font-family: "Playfair Display", serif;
+    margin-bottom: 0.7rem;
+    color: #3b2647;
+}
 
-    .about-box ul {
-        list-style: disc;
-        padding-left: 1.2rem;
-        font-size: 0.9rem;
-        color: #63414f;
-    }
+.about-box ul {
+    list-style: disc;
+    padding-left: 1.2rem;
+    font-size: 0.9rem;
+    color: #634a6c;
+}
 
 /* FAQ */
 .faq-item {
     border-radius: 1rem;
-    border: 1px solid #f2d7df;
+    border: 1px solid #e0cbdc;
     padding: 1.2rem 1.3rem;
     margin-bottom: 1rem;
     background-color: #ffffff;
 }
 
-    .faq-item h3 {
-        font-size: 1rem;
-        margin-bottom: 0.4rem;
-        font-family: "Playfair Display", serif;
-    }
+.faq-item h3 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+    font-family: "Playfair Display", serif;
+    color: #3b2647;
+}
 
 /* Contacto */
 .contact-grid {
@@ -288,62 +292,63 @@ body {
 .contact-form {
     background-color: #ffffff;
     border-radius: 1.25rem;
-    border: 1px solid #f2d7df;
+    border: 1px solid #e0cbdc;
     padding: 1.5rem;
-    box-shadow: 0 8px 20px rgba(200, 92, 130, 0.05);
+    box-shadow: 0 8px 20px rgba(139, 93, 145, 0.08);
 }
 
-    .contact-form h3 {
-        font-family: "Playfair Display", serif;
-        margin-bottom: 1rem;
-    }
+.contact-form h3 {
+    font-family: "Playfair Display", serif;
+    margin-bottom: 1rem;
+    color: #3b2647;
+}
 
-    .contact-form label {
-        display: block;
-        font-size: 0.8rem;
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        margin-bottom: 0.2rem;
-        color: #8b5a6c;
-    }
+.contact-form label {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.2rem;
+    color: #876592;
+}
 
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-        border-radius: 0.7rem;
-        border: 1px solid #f1d8de;
-        padding: 0.55rem 0.7rem;
-        margin-bottom: 0.7rem;
-        font-size: 0.9rem;
-        font-family: inherit;
-        outline: none;
-        background-color: #fffdfd;
-    }
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border-radius: 0.7rem;
+    border: 1px solid #e5d3ec;
+    padding: 0.55rem 0.7rem;
+    margin-bottom: 0.7rem;
+    font-size: 0.9rem;
+    font-family: inherit;
+    outline: none;
+    background-color: #fdfbff;
+}
 
-        .contact-form input:focus,
-        .contact-form textarea:focus {
-            border-color: #c85c82;
-            box-shadow: 0 0 0 2px rgba(200, 92, 130, 0.15);
-        }
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #c169a9;
+    box-shadow: 0 0 0 2px rgba(193, 105, 169, 0.25);
+}
 
 .contact-note {
     font-size: 0.75rem;
-    color: #9b6a7c;
+    color: #8f6b9a;
     margin-top: 0.5rem;
 }
 
 /* Footer */
 .footer {
     padding: 1rem 0 1.4rem;
-    border-top: 1px solid #f1d8de;
-    background-color: #fff9f9;
+    border-top: 1px solid #e0cbdc;
+    background-color: #f7f3fb;
     margin-top: 2rem;
 }
 
 .footer-content {
     text-align: center;
     font-size: 0.8rem;
-    color: #8f6172;
+    color: #8f6b9a;
 }
 
 /* RESPONSIVE */
@@ -360,7 +365,7 @@ body {
     }
 
     .nav {
-        display: none; /* Luego podemos hacer menú móvil si quieres */
+        display: none; /* luego podemos hacer menÃº mÃ³vil */
     }
 
     .hero {
